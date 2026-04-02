@@ -15,17 +15,6 @@
 
 ---
 
-## 📸 Preview
-
-![Preview App](./preview.png)
-
----
-
-## 🎥 Demo (GIF)
-
-![Demo](./demo.gif)
-
----
 
 ## 🧠 Descripción
 
