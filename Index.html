@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard de Divisas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>💱 Dashboard de Divisas</h1>
+      <p>Cotizaciones de monedas extranjeras expresadas en pesos argentinos</p>
+    </header>
+
+    <section class="controls">
+      <div class="input-group">
+        <label for="base">Moneda principal</label>
+        <select id="base"></select>
+      </div>
+
+      <div class="input-group">
+        <label for="currencyPicker">Agregar moneda</label>
+        <select id="currencyPicker"></select>
+      </div>
+
+      <div class="input-group button-group">
+        <label>&nbsp;</label>
+        <button id="addCurrencyBtn" type="button">Agregar</button>
+      </div>
+
+      <div class="input-group button-group">
+        <label>&nbsp;</label>
+        <button id="btn" type="button">Actualizar cotizaciones</button>
+      </div>
+    </section>
+
+    <section class="selected-panel">
+      <h2>Monedas seleccionadas</h2>
+      <div id="selectedCurrencies" class="selected-currencies"></div>
+    </section>
+
+    <section id="status" class="status" aria-live="polite">
+      Cargando...
+    </section>
+
+    <section id="cards" class="cards" aria-live="polite"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
